@@ -1,3 +1,4 @@
+import { Poppins } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,8 +10,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        lightpink: "#F9E6F0",
+        pink: "#FFA4D3",
+        orange: "#FFD285",
+        purple: "BFB0F2",
+        black: "#2D2D2D",
+        input: "#F3F3F3",
+        lightclientpink: "#F6DCE9",
+        clientborder: "#FFA4D3",
+      },
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+        abril: ["Abril Fatface", "sans-serif"],
       },
     },
   },

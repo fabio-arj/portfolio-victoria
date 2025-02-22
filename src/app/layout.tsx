@@ -45,7 +45,7 @@ export default function RootLayout({
         className={`${semiBoldPoppins.className} ${boldPoppins.className} ${regularPoppins.className} ${mediumPoppins.className} ${abrilFatface.className} antialiased`}
       >
         <Header></Header>
-        <main className="bg-white">{children}</main>
+        <main className="bg-white scroll-smooth">{children}</main>
         <Footer></Footer>
       </body>
     </html>

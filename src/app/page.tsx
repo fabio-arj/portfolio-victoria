@@ -1,69 +1,7 @@
-import { Work } from "@/lib/types";
-import WorkCard from "@/components/WorkCard";
-import WorkImage from "../../public/cat.jpg";
+"use client";
 
-const works: Work[] = [
-  {
-    title: "O brilho da minha cor",
-    description: "Ilustração e Design Editorial",
-    image: WorkImage,
-  },
-  {
-    title: "Documentário: Entrevista com Mirna Anaquiri",
-    description: "Produção Audiovisual",
-    image: WorkImage,
-  },
-  {
-    title: "Divulgação: Álbum de figurinhas Jockey Club - SP",
-    description: "Produção Audiovisual",
-    image: WorkImage,
-  },
-  {
-    title: "Álbum de figurinhas Jockey Club de São Paulo",
-    description: "Design Editorial ",
-    image: WorkImage,
-  },
-  {
-    title: "Boa Morte",
-    description: "Design Editorial ",
-    image: WorkImage,
-  },
-  {
-    title: "Pré-moldados Braga",
-    description: "Identidade Visual",
-    image: WorkImage,
-  },
-  {
-    title: "Ateliê de Artes e Ofícios",
-    description: "Identidade Visual",
-    image: WorkImage,
-  },
-  {
-    title: "O cânone: nascimento vida e morte dos clássicos nas artes",
-    description: "Design Editorial ",
-    image: WorkImage,
-  },
-  {
-    title: "Folder Jockey Club - SP",
-    description: "Design Editorial",
-    image: WorkImage,
-  },
-  {
-    title: "Redesign Vinhos 22: Dom Casmurro",
-    description: "Design de Embalagens",
-    image: WorkImage,
-  },
-  {
-    title: "Plainas Antigas",
-    description: "Identidade Visual",
-    image: WorkImage,
-  },
-  {
-    title: "Baudurso: o ursinho padeiro",
-    description: "Ilustração",
-    image: WorkImage,
-  },
-];
+import WorkCard from "@/components/WorkCard";
+import { works } from "@/lib/works";
 
 export default function Home() {
   return (
@@ -113,7 +51,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="py-5 px-14">
+      <div className="py-5 px-14" id="jobs-section">
         <h1 className="text-3xl text-black text-center mb-14">Trabalhos</h1>
         <div className="grid grid-cols-3 gap-x-10 gap-y-10">
           {works.map((work, index) => {

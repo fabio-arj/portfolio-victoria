@@ -1,20 +1,24 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex items-center h-20 w-full justify-between px-20 bg-white">
+    <header className="flex items-center h-20 w-full justify-between px-10 bg-white">
       <div>
-        <p className="text-xl font-normal text-black font-abril">
+        <Link href="/" className="text-xl font-normal text-black font-abril">
           Victoria Fagundes
-        </p>
+        </Link>
       </div>
       <div className="flex space-x-4">
-        <a href="" className="text-base font-normal text-black">
+        <Link href="/sobre" className="text-base font-normal text-black">
           Sobre mim
-        </a>
-        <a href="" className="text-base font-normal text-black">
+        </Link>
+        <Link
+          href="/#jobs-section"
+          className="text-base font-normal text-black"
+        >
           Trabalhos
-        </a>
+        </Link>
         <a href="" className="text-base font-normal text-black">
           Contato
         </a>
